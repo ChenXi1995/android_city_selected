@@ -21,6 +21,7 @@ import java.util.List;
 /**
  * @author chenxh
  * QQ 643200732
+ * 643200732@qq.com
  */
 public class ArerSelectActivity extends AppCompatActivity {
 
