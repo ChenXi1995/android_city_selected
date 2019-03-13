@@ -20,6 +20,7 @@ import java.util.List;
 
 /**
  * @author chenxh
+ * QQ 643200732
  */
 public class ArerSelectActivity extends AppCompatActivity {
 
