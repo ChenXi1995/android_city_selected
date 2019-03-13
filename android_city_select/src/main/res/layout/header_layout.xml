@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/titleLayout"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common45dp">
+
+        <ImageView
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/common5dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/common12dp"
+            android:paddingRight="@dimen/common12dp"
+            android:src="@drawable/left_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/black_10"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/common12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/common10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/black_10"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+</LinearLayout>

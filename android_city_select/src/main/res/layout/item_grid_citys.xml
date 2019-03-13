@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/common19dp"
+    android:layout_marginBottom="@dimen/common19dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:paddingBottom="@dimen/common8dp"
+        android:paddingTop="@dimen/common8dp"
+        android:paddingLeft="@dimen/common6dp"
+        android:text="@string/app_name"
+        android:id="@+id/tv_select_city_tag"
+        android:textColor="@color/text_33"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ll_delete_tag_up"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/common6dp"
+            android:id="@+id/iv_delete_tag"
+            android:layout_marginLeft="@dimen/common6dp"
+            android:src="@drawable/close_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

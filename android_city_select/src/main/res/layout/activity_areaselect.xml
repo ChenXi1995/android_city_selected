@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/common6dp"
+                android:layout_marginLeft="@dimen/common6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_f0"
+                android:gravity="center"
+                android:padding="@dimen/common8dp"
+                android:text="省份列表" />
+
+            <ExpandableListView
+                android:divider="@null"
+                android:scrollbars="none"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:id="@+id/expandablelistview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:groupIndicator="@null" />
+
+            <com.cxh.android_city_select.NoScrollListView
+                android:id="@+id/girdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common10dp"
+                android:layout_marginRight="@dimen/common10dp"
+                android:horizontalSpacing="@dimen/common1dp"
+                android:verticalSpacing="@dimen/common1dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common8dp"
+                android:background="@color/gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/common8dp"
+                android:text="城市列表"
+                android:visibility="gone" />
+
+            <com.cxh.android_city_select.NoScrollListView
+                android:id="@+id/shi_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common10dp"
+                android:layout_marginRight="@dimen/common10dp"
+                android:horizontalSpacing="@dimen/common1dp"
+                android:verticalSpacing="@dimen/common1dp"
+                android:visibility="gone" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common1dp"
+                android:background="@color/gray_bg" />
+
+            <com.cxh.android_city_select.ExpandableGridView
+                android:paddingTop="@dimen/common4dp"
+                android:paddingBottom="@dimen/common4dp"
+                android:verticalSpacing="@dimen/common8dp"
+                android:horizontalSpacing="@dimen/common8dp"
+                android:minHeight="@dimen/common50dp"
+                android:background="@color/bg_f0"
+                android:numColumns="4"
+                android:id="@+id/gv_tags"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/close_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:padding="@dimen/common10dp"
+            android:text="确定"
+            android:textColor="@color/blue_53"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/close_tags">
+
+            <com.cxh.android_city_select.TagLayout
+                android:id="@+id/csl_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:max_select="-1" />
+        </ScrollView>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
